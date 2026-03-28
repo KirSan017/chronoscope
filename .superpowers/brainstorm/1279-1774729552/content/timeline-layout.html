@@ -1,0 +1,128 @@
+<h2>Секция 1: Основной интерфейс таймлайна</h2>
+<p class="subtitle">Как пользователь взаимодействует с осью времени</p>
+
+<div class="mockup">
+  <div class="mockup-header">Макет основного экрана</div>
+  <div class="mockup-body" style="background:#0a0a1a;color:#e0e0e0;padding:0;overflow:hidden;min-height:500px;position:relative;font-family:system-ui,sans-serif;">
+
+    <!-- Top bar -->
+    <div style="display:flex;align-items:center;justify-content:space-between;padding:12px 20px;background:rgba(255,255,255,0.05);border-bottom:1px solid rgba(255,255,255,0.1);">
+      <div style="font-size:20px;font-weight:700;letter-spacing:1px;">
+        <span style="color:#818cf8;">CHRONO</span><span style="color:#c084fc;">SCOPE</span>
+      </div>
+      <div style="display:flex;gap:12px;align-items:center;">
+        <div style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);border-radius:8px;padding:6px 14px;font-size:13px;color:#a0a0b0;min-width:200px;">
+          🔍 Пушкин, Наполеон, 1812...
+        </div>
+        <div style="display:flex;gap:4px;">
+          <span style="background:rgba(129,140,248,0.2);color:#818cf8;padding:4px 10px;border-radius:6px;font-size:11px;cursor:pointer;">Политика</span>
+          <span style="background:rgba(192,132,252,0.2);color:#c084fc;padding:4px 10px;border-radius:6px;font-size:11px;cursor:pointer;">Наука</span>
+          <span style="background:rgba(248,113,113,0.2);color:#f87171;padding:4px 10px;border-radius:6px;font-size:11px;cursor:pointer;">Культура</span>
+          <span style="background:rgba(52,211,153,0.2);color:#34d399;padding:4px 10px;border-radius:6px;font-size:11px;cursor:pointer;">Люди</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main timeline area -->
+    <div style="position:relative;padding:30px 20px 80px;">
+
+      <!-- Era label -->
+      <div style="text-align:center;margin-bottom:24px;">
+        <span style="font-size:11px;text-transform:uppercase;letter-spacing:3px;color:#818cf8;">XIX век</span>
+        <div style="font-size:28px;font-weight:300;color:#e0e0f0;margin-top:4px;">1790 — 1850</div>
+      </div>
+
+      <!-- Timeline axis (canvas layer representation) -->
+      <div style="position:relative;height:4px;background:linear-gradient(90deg,rgba(129,140,248,0.1),rgba(129,140,248,0.4),rgba(192,132,252,0.4),rgba(192,132,252,0.1));border-radius:2px;margin:40px 0;">
+        <!-- Year markers -->
+        <div style="position:absolute;top:-20px;left:0%;font-size:10px;color:#606080;">1790</div>
+        <div style="position:absolute;top:-20px;left:16.6%;font-size:10px;color:#606080;">1800</div>
+        <div style="position:absolute;top:-20px;left:33.3%;font-size:10px;color:#606080;">1810</div>
+        <div style="position:absolute;top:-20px;left:50%;font-size:10px;color:#606080;">1820</div>
+        <div style="position:absolute;top:-20px;left:66.6%;font-size:10px;color:#606080;">1830</div>
+        <div style="position:absolute;top:-20px;left:83.3%;font-size:10px;color:#606080;">1840</div>
+        <div style="position:absolute;top:-20px;left:100%;font-size:10px;color:#606080;">1850</div>
+
+        <!-- Glow dots on axis -->
+        <div style="position:absolute;top:-3px;left:16.6%;width:10px;height:10px;background:#818cf8;border-radius:50%;box-shadow:0 0 12px #818cf8;"></div>
+        <div style="position:absolute;top:-3px;left:36%;width:10px;height:10px;background:#f87171;border-radius:50%;box-shadow:0 0 12px #f87171;"></div>
+        <div style="position:absolute;top:-3px;left:53%;width:10px;height:10px;background:#c084fc;border-radius:50%;box-shadow:0 0 12px #c084fc;"></div>
+      </div>
+
+      <!-- Person lifespan bar (Pushkin) -->
+      <div style="position:relative;margin:30px 0 20px;">
+        <div style="position:absolute;left:15%;width:38%;height:28px;background:linear-gradient(90deg,rgba(52,211,153,0.3),rgba(52,211,153,0.15));border:1px solid rgba(52,211,153,0.4);border-radius:14px;display:flex;align-items:center;padding:0 12px;">
+          <span style="font-size:12px;color:#34d399;font-weight:600;">А.С. Пушкин</span>
+          <span style="font-size:10px;color:#34d39980;margin-left:8px;">1799 — 1837</span>
+        </div>
+      </div>
+
+      <!-- Person lifespan bar (Napoleon) -->
+      <div style="position:relative;margin:10px 0 20px;">
+        <div style="position:absolute;left:11.5%;width:36%;height:28px;background:linear-gradient(90deg,rgba(248,113,113,0.3),rgba(248,113,113,0.15));border:1px solid rgba(248,113,113,0.4);border-radius:14px;display:flex;align-items:center;padding:0 12px;">
+          <span style="font-size:12px;color:#f87171;font-weight:600;">Наполеон</span>
+          <span style="font-size:10px;color:#f8717180;margin-left:8px;">1769 — 1821</span>
+        </div>
+      </div>
+
+      <!-- Event cards (DOM layer) -->
+      <div style="display:flex;gap:12px;margin-top:40px;flex-wrap:wrap;">
+
+        <div style="flex:1;min-width:180px;background:rgba(129,140,248,0.1);border:1px solid rgba(129,140,248,0.25);border-radius:12px;padding:14px;cursor:pointer;transition:all 0.2s;">
+          <div style="font-size:10px;color:#818cf8;text-transform:uppercase;letter-spacing:1px;">Политика</div>
+          <div style="font-size:14px;font-weight:600;color:#e0e0f0;margin:6px 0 4px;">Отечественная война</div>
+          <div style="font-size:12px;color:#808090;">1812 · Россия</div>
+          <div style="font-size:11px;color:#606080;margin-top:6px;">Вторжение Наполеона в Россию...</div>
+          <div style="font-size:10px;color:#818cf880;margin-top:8px;">→ Wikipedia</div>
+        </div>
+
+        <div style="flex:1;min-width:180px;background:rgba(192,132,252,0.1);border:1px solid rgba(192,132,252,0.25);border-radius:12px;padding:14px;cursor:pointer;">
+          <div style="font-size:10px;color:#c084fc;text-transform:uppercase;letter-spacing:1px;">Наука</div>
+          <div style="font-size:14px;font-weight:600;color:#e0e0f0;margin:6px 0 4px;">Первый паровоз</div>
+          <div style="font-size:12px;color:#808090;">1804 · Англия</div>
+          <div style="font-size:11px;color:#606080;margin-top:6px;">Ричард Тревитик построил...</div>
+          <div style="font-size:10px;color:#c084fc80;margin-top:8px;">→ Wikipedia</div>
+        </div>
+
+        <div style="flex:1;min-width:180px;background:rgba(248,113,113,0.1);border:1px solid rgba(248,113,113,0.25);border-radius:12px;padding:14px;cursor:pointer;">
+          <div style="font-size:10px;color:#f87171;text-transform:uppercase;letter-spacing:1px;">Культура</div>
+          <div style="font-size:14px;font-weight:600;color:#e0e0f0;margin:6px 0 4px;">Евгений Онегин</div>
+          <div style="font-size:12px;color:#808090;">1833 · Россия</div>
+          <div style="font-size:11px;color:#606080;margin-top:6px;">Роман в стихах Пушкина...</div>
+          <div style="font-size:10px;color:#f8717180;margin-top:8px;">→ Wikipedia</div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Bottom zoom controls -->
+    <div style="position:absolute;bottom:0;left:0;right:0;padding:12px 20px;background:rgba(255,255,255,0.03);border-top:1px solid rgba(255,255,255,0.08);display:flex;align-items:center;justify-content:space-between;">
+      <div style="display:flex;gap:8px;font-size:11px;">
+        <span style="color:#606080;padding:3px 8px;border:1px solid rgba(255,255,255,0.1);border-radius:4px;cursor:pointer;">5000 до н.э.</span>
+        <span style="color:#606080;padding:3px 8px;border:1px solid rgba(255,255,255,0.1);border-radius:4px;cursor:pointer;">Античность</span>
+        <span style="color:#818cf8;padding:3px 8px;border:1px solid rgba(129,140,248,0.3);border-radius:4px;background:rgba(129,140,248,0.1);cursor:pointer;">XIX век</span>
+        <span style="color:#606080;padding:3px 8px;border:1px solid rgba(255,255,255,0.1);border-radius:4px;cursor:pointer;">XX век</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:12px;">
+        <span style="font-size:11px;color:#606080;">Масштаб:</span>
+        <div style="width:120px;height:4px;background:rgba(255,255,255,0.1);border-radius:2px;position:relative;">
+          <div style="position:absolute;left:60%;top:-4px;width:12px;height:12px;background:#818cf8;border-radius:50%;cursor:pointer;box-shadow:0 0 8px rgba(129,140,248,0.5);"></div>
+        </div>
+        <span style="font-size:10px;color:#606080;">10 лет</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div style="margin-top:20px;">
+  <h3>Ключевые элементы:</h3>
+  <ul style="font-size:14px;line-height:1.8;color:#c0c0d0;">
+    <li><strong>Ось времени</strong> (canvas) — горизонтальная линия с подсветкой, точки событий с glow-эффектом</li>
+    <li><strong>Полосы жизни</strong> — цветные полупрозрачные полосы показывают годы жизни персоналий</li>
+    <li><strong>Карточки событий</strong> (DOM) — кликабельные, со ссылкой на Wikipedia, цветовая кодировка по категории</li>
+    <li><strong>Зум</strong> — от 7000 лет (обзор) до 1 года (детали), колёсиком мыши или ползунком</li>
+    <li><strong>Быстрые эпохи</strong> — кнопки внизу для перехода к основным периодам</li>
+    <li><strong>Поиск</strong> — по имени, событию, году. Найденное центрируется на таймлайне</li>
+  </ul>
+</div>

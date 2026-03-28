@@ -1,0 +1,81 @@
+<h2>3 подхода к архитектуре</h2>
+<p class="subtitle">Выбери подход, который ближе всего к твоему видению</p>
+
+<div class="options">
+  <div class="option" data-choice="a" onclick="toggleSelect(this)">
+    <div class="letter">A</div>
+    <div class="content">
+      <h3>Canvas/WebGL + SPA</h3>
+      <p><strong>Стек:</strong> React/Next.js + PixiJS или Three.js для рендера таймлайна</p>
+      <p><strong>Суть:</strong> Таймлайн рисуется на canvas — полный контроль над анимациями, зумом, переходами. Десятки тысяч событий без тормозов. Данные из Wikidata кэшируются в SQLite/JSON на сервере.</p>
+      <div class="pros-cons">
+        <div class="pros"><h4>Плюсы</h4>
+          <ul>
+            <li>Максимальная производительность при большом количестве событий</li>
+            <li>Полный контроль над визуалом и анимациями</li>
+            <li>Плавный зум от тысячелетий до дней</li>
+          </ul>
+        </div>
+        <div class="cons"><h4>Минусы</h4>
+          <ul>
+            <li>Сложнее в разработке — canvas не даёт бесплатной доступности</li>
+            <li>Текст на canvas менее чёткий, чем DOM</li>
+            <li>SEO ограничен</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="option" data-choice="b" onclick="toggleSelect(this)">
+    <div class="letter">B</div>
+    <div class="content">
+      <h3>DOM + CSS Animations</h3>
+      <p><strong>Стек:</strong> React/Next.js + Framer Motion + CSS transforms для зума</p>
+      <p><strong>Суть:</strong> Таймлайн построен из DOM-элементов с CSS-трансформациями. Виртуализация для производительности (рендерим только видимые события). Анимации через Framer Motion.</p>
+      <div class="pros-cons">
+        <div class="pros"><h4>Плюсы</h4>
+          <ul>
+            <li>Проще в разработке — стандартный React</li>
+            <li>Чёткий текст, доступность, SEO</li>
+            <li>Framer Motion даёт красивые анимации из коробки</li>
+          </ul>
+        </div>
+        <div class="cons"><h4>Минусы</h4>
+          <ul>
+            <li>Лимит ~1000-2000 DOM-элементов одновременно</li>
+            <li>Зум менее плавный на больших масштабах</li>
+            <li>Сложнее реализовать "бесконечный" зум</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="option" data-choice="c" onclick="toggleSelect(this)">
+    <div class="letter">C</div>
+    <div class="content">
+      <h3>Гибрид: Canvas фон + DOM оверлей</h3>
+      <p><strong>Стек:</strong> React/Next.js + HTML Canvas для оси/линий + DOM для карточек событий + Framer Motion</p>
+      <p><strong>Суть:</strong> Canvas рисует ось времени, линии связей и фоновые эффекты. Карточки событий — DOM-элементы поверх canvas. Лучшее от обоих миров.</p>
+      <div class="pros-cons">
+        <div class="pros"><h4>Плюсы</h4>
+          <ul>
+            <li>Красивый фон + чёткие читаемые карточки</li>
+            <li>Canvas для тяжёлой графики, DOM для интерактива</li>
+            <li>Хороший баланс производительности и удобства</li>
+          </ul>
+        </div>
+        <div class="cons"><h4>Минусы</h4>
+          <ul>
+            <li>Нужно синхронизировать два слоя (canvas + DOM)</li>
+            <li>Чуть сложнее архитектура</li>
+          </ul>
+        </div>
+      </div>
+      <p style="margin-top:12px;padding:8px 12px;background:rgba(99,102,241,0.15);border-radius:8px;font-size:14px;">
+        ⭐ <strong>Рекомендую</strong> — лучший баланс вау-эффекта, читаемости и производительности
+      </p>
+    </div>
+  </div>
+</div>
