@@ -76,7 +76,9 @@ export function CanvasLayer({ viewport, events, width, height }: CanvasLayerProp
 
     // Event glow dots
     for (const event of events) {
-      const eventYear = parseFloat(event.dateStart.slice(0, 4));
+      const eventYear = event.dateStart.startsWith("-")
+        ? -parseInt(event.dateStart.slice(1, 5), 10)
+        : parseInt(event.dateStart.slice(0, 4), 10);
       const x = yearToPixel(eventYear, viewport, width);
       if (x < -20 || x > width + 20) continue;
       const color = CATEGORY_COLORS[event.category];
