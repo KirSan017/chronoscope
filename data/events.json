@@ -1,0 +1,22 @@
+[
+  {"id":"Q362","title":"Отечественная война 1812 года","dateStart":"1812-06-24","dateEnd":"1812-12-14","category":"politics","wikiUrl":"https://ru.wikipedia.org/wiki/Отечественная_война_1812_года"},
+  {"id":"Q7066","title":"Французская революция","dateStart":"1789-07-14","category":"politics","wikiUrl":"https://ru.wikipedia.org/wiki/Великая_французская_революция"},
+  {"id":"Q8740","title":"Первая мировая война","dateStart":"1914-07-28","dateEnd":"1918-11-11","category":"politics","wikiUrl":"https://ru.wikipedia.org/wiki/Первая_мировая_война"},
+  {"id":"Q361","title":"Вторая мировая война","dateStart":"1939-09-01","dateEnd":"1945-09-02","category":"politics","wikiUrl":"https://ru.wikipedia.org/wiki/Вторая_мировая_война"},
+  {"id":"Q7318","title":"А.С. Пушкин","dateStart":"1799-06-06","dateEnd":"1837-02-10","category":"person","wikiUrl":"https://ru.wikipedia.org/wiki/Пушкин,_Александр_Сергеевич"},
+  {"id":"Q5879","title":"Наполеон Бонапарт","dateStart":"1769-08-15","dateEnd":"1821-05-05","category":"person","wikiUrl":"https://ru.wikipedia.org/wiki/Наполеон_I"},
+  {"id":"Q937","title":"Альберт Эйнштейн","dateStart":"1879-03-14","dateEnd":"1955-04-18","category":"person","wikiUrl":"https://ru.wikipedia.org/wiki/Эйнштейн,_Альберт"},
+  {"id":"Q1299","title":"Битлз","dateStart":"1960-01-01","dateEnd":"1970-04-10","category":"culture","wikiUrl":"https://ru.wikipedia.org/wiki/The_Beatles"},
+  {"id":"Q5593","title":"Леонардо да Винчи","dateStart":"1452-04-15","dateEnd":"1519-05-02","category":"person","wikiUrl":"https://ru.wikipedia.org/wiki/Леонардо_да_Винчи"},
+  {"id":"Q1067","title":"Галилео Галилей","dateStart":"1564-02-15","dateEnd":"1642-01-08","category":"person","wikiUrl":"https://ru.wikipedia.org/wiki/Галилей,_Галилео"},
+  {"id":"Q35120","title":"Открытие пенициллина","dateStart":"1928-09-28","category":"science","wikiUrl":"https://ru.wikipedia.org/wiki/Пенициллин"},
+  {"id":"Q11768","title":"Изобретение книгопечатания","dateStart":"1440-01-01","category":"technology","wikiUrl":"https://ru.wikipedia.org/wiki/Книгопечатание"},
+  {"id":"Q2003","title":"Крещение Руси","dateStart":"0988-01-01","category":"religion","wikiUrl":"https://ru.wikipedia.org/wiki/Крещение_Руси"},
+  {"id":"Q1234","title":"Колумб открывает Америку","dateStart":"1492-10-12","category":"politics","wikiUrl":"https://ru.wikipedia.org/wiki/Открытие_Америки"},
+  {"id":"Q5555","title":"Людвиг ван Бетховен","dateStart":"1770-12-17","dateEnd":"1827-03-26","category":"person","wikiUrl":"https://ru.wikipedia.org/wiki/Бетховен,_Людвиг_ван"},
+  {"id":"Q7186","title":"Мария Кюри","dateStart":"1867-11-07","dateEnd":"1934-07-04","category":"person","wikiUrl":"https://ru.wikipedia.org/wiki/Кюри,_Мария"},
+  {"id":"Q42","title":"Дуглас Адамс","dateStart":"1952-03-11","dateEnd":"2001-05-11","category":"person","wikiUrl":"https://ru.wikipedia.org/wiki/Адамс,_Дуглас"},
+  {"id":"Q8686","title":"Высадка на Луну","dateStart":"1969-07-20","category":"technology","wikiUrl":"https://ru.wikipedia.org/wiki/Аполлон-11"},
+  {"id":"Q9312","title":"Падение Берлинской стены","dateStart":"1989-11-09","category":"politics","wikiUrl":"https://ru.wikipedia.org/wiki/Падение_Берлинской_стены"},
+  {"id":"Q1001","title":"Махатма Ганди","dateStart":"1869-10-02","dateEnd":"1948-01-30","category":"person","wikiUrl":"https://ru.wikipedia.org/wiki/Ганди,_Махатма"}
+]
