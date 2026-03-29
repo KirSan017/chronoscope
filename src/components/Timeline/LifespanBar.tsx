@@ -31,10 +31,11 @@ export function LifespanBar({ person, left, width, top, onClick }: LifespanBarPr
         border: `1px solid ${color}66`, borderRadius: 14,
         display: "flex", alignItems: "center", padding: "0 12px",
         cursor: "pointer", transformOrigin: "left center",
+        overflow: "hidden",
       }}
     >
-      <span style={{ fontSize: 12, color, fontWeight: 600, whiteSpace: "nowrap" }}>{person.title}</span>
-      <span style={{ fontSize: 10, color: `${color}80`, marginLeft: 8, whiteSpace: "nowrap" }}>{startYear} — {endYear}</span>
+      <span style={{ fontSize: 12, color, fontWeight: 600, whiteSpace: "nowrap", overflow: "hidden", textOverflow: "ellipsis", minWidth: 0 }}>{person.title}</span>
+      <span style={{ fontSize: 10, color: `${color}80`, marginLeft: 8, whiteSpace: "nowrap", flexShrink: 0 }}>{startYear} — {endYear}</span>
     </motion.div>
   );
 }
