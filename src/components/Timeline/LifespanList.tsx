@@ -36,7 +36,7 @@ export function LifespanList({ events, viewport, containerWidth, activeCategorie
       return deathYear >= startYear - buffer && birthYear <= endYear + buffer;
     })
     .sort((a, b) => parseYear(a.dateStart) - parseYear(b.dateStart))
-    .slice(0, 15);
+    .slice(0, 30);
 
   // Greedy row placement for bars too
   const rows: { endX: number }[] = [];
