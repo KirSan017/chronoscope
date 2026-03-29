@@ -41,6 +41,9 @@ export const Timeline = forwardRef<TimelineHandle, TimelineProps>(function Timel
   }, []);
 
   const handleWheel = useCallback((e: React.WheelEvent) => {
+    // Don't zoom when scrolling inside EventDetail or other scrollable panels
+    const target = e.target as HTMLElement;
+    if (target.closest(".event-detail-panel")) return;
     e.preventDefault();
     const rect = containerRef.current?.getBoundingClientRect();
     if (!rect) return;
