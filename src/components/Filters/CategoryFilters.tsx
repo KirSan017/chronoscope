@@ -12,12 +12,12 @@ interface CategoryFiltersProps {
 
 export function CategoryFilters({ active, onToggle }: CategoryFiltersProps) {
   return (
-    <div style={{ display: "flex", gap: 4 }}>
+    <div className="filters-row" style={{ display: "flex", gap: 4 }}>
       {ALL_CATEGORIES.map((cat) => {
         const color = CATEGORY_COLORS[cat];
         const isActive = active.has(cat);
         return (
-          <button key={cat} onClick={() => onToggle(cat)}
+          <button key={cat} className="filter-btn" onClick={() => onToggle(cat)}
             style={{
               background: isActive ? `${color}33` : "transparent",
               color: isActive ? color : "#606080",

@@ -15,12 +15,12 @@ export function PersonSubcategoryFilters({ active, onToggle, visible }: PersonSu
   if (!visible) return null;
 
   return (
-    <div style={{ display: "flex", gap: 4, flexWrap: "wrap" }}>
+    <div className="filters-row" style={{ display: "flex", gap: 4, flexWrap: "wrap" }}>
       {ALL_SUBCATEGORIES.map((sub) => {
         const color = PERSON_SUBCATEGORY_COLORS[sub];
         const isActive = active.has(sub);
         return (
-          <button key={sub} onClick={() => onToggle(sub)}
+          <button key={sub} className="filter-btn" onClick={() => onToggle(sub)}
             style={{
               background: isActive ? `${color}33` : "transparent",
               color: isActive ? color : "#606080",

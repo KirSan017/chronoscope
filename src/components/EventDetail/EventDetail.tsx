@@ -14,6 +14,7 @@ export function EventDetail({ event, onClose }: EventDetailProps) {
 
   return (
     <motion.div
+      className="event-detail-panel"
       initial={{ opacity: 0, x: 50 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: 50 }}
       style={{
         position: "fixed", top: 80, right: 20, width: 360, maxHeight: "calc(100vh - 100px)",

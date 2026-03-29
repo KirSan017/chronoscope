@@ -19,9 +19,9 @@ export function ZoomControls({ yearsVisible, onZoom, onGoToEpoch }: ZoomControls
       background: "rgba(255,255,255,0.03)", borderTop: "1px solid rgba(255,255,255,0.08)",
       display: "flex", alignItems: "center", justifyContent: "space-between",
     }}>
-      <div style={{ display: "flex", gap: 8 }}>
+      <div className="epochs-row" style={{ display: "flex", gap: 8 }}>
         {EPOCHS.map((epoch) => (
-          <button key={epoch.id} onClick={() => onGoToEpoch(epoch.startYear, epoch.endYear)}
+          <button key={epoch.id} className="epoch-btn" onClick={() => onGoToEpoch(epoch.startYear, epoch.endYear)}
             style={{ color: "#606080", padding: "3px 8px", border: "1px solid rgba(255,255,255,0.1)",
               borderRadius: 4, fontSize: 11, background: "transparent", cursor: "pointer" }}>
             {epoch.label}

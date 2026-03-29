@@ -19,7 +19,7 @@ function parseYear(dateStr: string): number {
   return parseInt(dateStr.slice(0, 4), 10);
 }
 
-const CARD_WIDTH = 200;
+const CARD_WIDTH = 180;
 const CARD_HEIGHT = 100;
 const CARD_GAP = 8;
 

@@ -28,3 +28,60 @@ html, body {
   font-family: system-ui, -apple-system, sans-serif;
   overflow: hidden;
 }
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column !important;
+    gap: 8px !important;
+    padding: 8px 12px !important;
+  }
+
+  .header-right {
+    width: 100%;
+    flex-direction: column !important;
+    gap: 6px !important;
+    align-items: stretch !important;
+  }
+
+  .header-right input {
+    min-width: unset !important;
+    width: 100% !important;
+  }
+
+  .filters-row {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+  }
+
+  .epochs-row {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 4px !important;
+  }
+
+  .event-detail-panel {
+    width: calc(100vw - 24px) !important;
+    max-width: 360px !important;
+    right: 12px !important;
+    top: auto !important;
+    bottom: 60px !important;
+    max-height: 50vh !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-logo {
+    font-size: 16px !important;
+  }
+
+  .filter-btn {
+    padding: 3px 6px !important;
+    font-size: 10px !important;
+  }
+
+  .epoch-btn {
+    padding: 2px 6px !important;
+    font-size: 10px !important;
+  }
+}
