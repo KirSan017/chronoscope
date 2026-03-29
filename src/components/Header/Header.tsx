@@ -1,17 +1,21 @@
 "use client";
 
-import type { Category, HistoryEvent } from "@/types";
+import type { Category, HistoryEvent, PersonSubcategory } from "@/types";
 import { SearchBar } from "@/components/Search/SearchBar";
 import { CategoryFilters } from "@/components/Filters/CategoryFilters";
+import { PersonSubcategoryFilters } from "@/components/Filters/PersonSubcategoryFilters";
 
 interface HeaderProps {
   events: HistoryEvent[];
   activeCategories: Set<Category>;
   onToggleCategory: (category: Category) => void;
   onSearchSelect: (event: HistoryEvent) => void;
+  activePersonSubs: Set<PersonSubcategory>;
+  onTogglePersonSub: (sub: PersonSubcategory) => void;
+  showPersonSubs: boolean;
 }
 
-export function Header({ events, activeCategories, onToggleCategory, onSearchSelect }: HeaderProps) {
+export function Header({ events, activeCategories, onToggleCategory, onSearchSelect, activePersonSubs, onTogglePersonSub, showPersonSubs }: HeaderProps) {
   return (
     <div style={{
       display: "flex", alignItems: "center", justifyContent: "space-between",
@@ -24,7 +28,10 @@ export function Header({ events, activeCategories, onToggleCategory, onSearchSel
       </div>
       <div style={{ display: "flex", gap: 12, alignItems: "center" }}>
         <SearchBar events={events} onSelect={onSearchSelect} />
-        <CategoryFilters active={activeCategories} onToggle={onToggleCategory} />
+        <div style={{ display: "flex", flexDirection: "column", gap: 6, alignItems: "flex-end" }}>
+          <CategoryFilters active={activeCategories} onToggle={onToggleCategory} />
+          <PersonSubcategoryFilters active={activePersonSubs} onToggle={onTogglePersonSub} visible={showPersonSubs} />
+        </div>
       </div>
     </div>
   );

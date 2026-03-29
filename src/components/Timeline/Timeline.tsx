@@ -2,7 +2,7 @@
 
 import { forwardRef, useCallback, useEffect, useImperativeHandle, useRef, useState } from "react";
 import { AnimatePresence } from "framer-motion";
-import type { Category, HistoryEvent } from "@/types";
+import type { Category, HistoryEvent, PersonSubcategory } from "@/types";
 import { useViewport } from "./useViewport";
 import { CanvasLayer } from "./CanvasLayer";
 import { EventList } from "./EventList";
@@ -14,13 +14,14 @@ import { fetchExtract } from "@/lib/wikipedia";
 interface TimelineProps {
   events: HistoryEvent[];
   activeCategories: Set<Category>;
+  activePersonSubs: Set<PersonSubcategory>;
 }
 
 export interface TimelineHandle {
   goToYear: (year: number, span?: number) => void;
 }
 
-export const Timeline = forwardRef<TimelineHandle, TimelineProps>(function Timeline({ events, activeCategories }, ref) {
+export const Timeline = forwardRef<TimelineHandle, TimelineProps>(function Timeline({ events, activeCategories, activePersonSubs }, ref) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [size, setSize] = useState({ width: 0, height: 0 });
   const [selectedEvent, setSelectedEvent] = useState<HistoryEvent | null>(null);
@@ -74,7 +75,7 @@ export const Timeline = forwardRef<TimelineHandle, TimelineProps>(function Timel
       {size.width > 0 && (
         <>
           <CanvasLayer viewport={viewport} events={events.filter((e) => activeCategories.has(e.category))} width={size.width} height={size.height} />
-          <LifespanList events={events} viewport={viewport} containerWidth={size.width} activeCategories={activeCategories} axisY={axisY} onSelectPerson={handleSelectEvent} />
+          <LifespanList events={events} viewport={viewport} containerWidth={size.width} activeCategories={activeCategories} activePersonSubs={activePersonSubs} axisY={axisY} onSelectPerson={handleSelectEvent} />
           <EventList events={events} viewport={viewport} containerWidth={size.width} activeCategories={activeCategories} axisY={axisY} onSelectEvent={handleSelectEvent} />
         </>
       )}

@@ -952,7 +952,8 @@
     "dateStart": "0830-01-01",
     "dateEnd": "0879-01-01",
     "category": "person",
-    "wikiUrl": "https://ru.wikipedia.org/wiki/Рюрик"
+    "wikiUrl": "https://ru.wikipedia.org/wiki/Рюрик",
+    "subcategory": "politics"
   },
   {
     "id": "per-2",
@@ -960,7 +961,8 @@
     "dateStart": "0958-01-01",
     "dateEnd": "1015-07-15",
     "category": "person",
-    "wikiUrl": "https://ru.wikipedia.org/wiki/Владимир_I_Святославич"
+    "wikiUrl": "https://ru.wikipedia.org/wiki/Владимир_I_Святославич",
+    "subcategory": "politics"
   },
   {
     "id": "per-3",
@@ -968,7 +970,8 @@
     "dateStart": "0978-01-01",
     "dateEnd": "1054-02-20",
     "category": "person",
-    "wikiUrl": "https://ru.wikipedia.org/wiki/Ярослав_Мудрый"
+    "wikiUrl": "https://ru.wikipedia.org/wiki/Ярослав_Мудрый",
+    "subcategory": "politics"
   },
   {
     "id": "per-4",
@@ -976,7 +979,8 @@
     "dateStart": "1221-05-13",
     "dateEnd": "1263-11-14",
     "category": "person",
-    "wikiUrl": "https://ru.wikipedia.org/wiki/Александр_Невский"
+    "wikiUrl": "https://ru.wikipedia.org/wiki/Александр_Невский",
+    "subcategory": "military"
   },
   {
     "id": "per-5",
@@ -984,7 +988,8 @@
     "dateStart": "1350-10-12",
     "dateEnd": "1389-05-19",
     "category": "person",
-    "wikiUrl": "https://ru.wikipedia.org/wiki/Дмитрий_Донской"
+    "wikiUrl": "https://ru.wikipedia.org/wiki/Дмитрий_Донской",
+    "subcategory": "politics"
   },
   {
     "id": "per-6",
@@ -992,7 +997,8 @@
     "dateStart": "1440-01-22",
     "dateEnd": "1505-10-27",
     "category": "person",
-    "wikiUrl": "https://ru.wikipedia.org/wiki/Иван_III"
+    "wikiUrl": "https://ru.wikipedia.org/wiki/Иван_III",
+    "subcategory": "politics"
   },
   {
     "id": "per-7",
@@ -1000,7 +1006,8 @@
     "dateStart": "1530-08-25",
     "dateEnd": "1584-03-28",
     "category": "person",
-    "wikiUrl": "https://ru.wikipedia.org/wiki/Иван_IV_Грозный"
+    "wikiUrl": "https://ru.wikipedia.org/wiki/Иван_IV_Грозный",
+    "subcategory": "politics"
   },
   {
     "id": "per-8",
@@ -1008,7 +1015,8 @@
     "dateStart": "1672-06-09",
     "dateEnd": "1725-02-08",
     "category": "person",
-    "wikiUrl": "https://ru.wikipedia.org/wiki/Пётр_I"
+    "wikiUrl": "https://ru.wikipedia.org/wiki/Пётр_I",
+    "subcategory": "politics"
   },
   {
     "id": "per-9",
@@ -1016,7 +1024,8 @@
     "dateStart": "1729-05-02",
     "dateEnd": "1796-11-17",
     "category": "person",
-    "wikiUrl": "https://ru.wikipedia.org/wiki/Екатерина_II"
+    "wikiUrl": "https://ru.wikipedia.org/wiki/Екатерина_II",
+    "subcategory": "politics"
   },
   {
     "id": "per-10",
@@ -1024,7 +1033,8 @@
     "dateStart": "1730-11-24",
     "dateEnd": "1800-05-18",
     "category": "person",
-    "wikiUrl": "https://ru.wikipedia.org/wiki/Суворов,_Александр_Васильевич"
+    "wikiUrl": "https://ru.wikipedia.org/wiki/Суворов,_Александр_Васильевич",
+    "subcategory": "military"
   },
   {
     "id": "per-11",
@@ -1032,7 +1042,8 @@
     "dateStart": "1745-09-16",
     "dateEnd": "1813-04-28",
     "category": "person",
-    "wikiUrl": "https://ru.wikipedia.org/wiki/Кутузов,_Михаил_Илларионович"
+    "wikiUrl": "https://ru.wikipedia.org/wiki/Кутузов,_Михаил_Илларионович",
+    "subcategory": "military"
   },
   {
     "id": "per-12",
@@ -1040,7 +1051,8 @@
     "dateStart": "1711-11-19",
     "dateEnd": "1765-04-15",
     "category": "person",
-    "wikiUrl": "https://ru.wikipedia.org/wiki/Ломоносов,_Михаил_Васильевич"
+    "wikiUrl": "https://ru.wikipedia.org/wiki/Ломоносов,_Михаил_Васильевич",
+    "subcategory": "science"
   },
   {
     "id": "per-13",
@@ -1048,7 +1060,8 @@
     "dateStart": "1799-06-06",
     "dateEnd": "1837-02-10",
     "category": "person",
-    "wikiUrl": "https://ru.wikipedia.org/wiki/Пушкин,_Александр_Сергеевич"
+    "wikiUrl": "https://ru.wikipedia.org/wiki/Пушкин,_Александр_Сергеевич",
+    "subcategory": "literature"
   },
   {
     "id": "per-14",
@@ -1056,7 +1069,8 @@
     "dateStart": "1814-10-15",
     "dateEnd": "1841-07-27",
     "category": "person",
-    "wikiUrl": "https://ru.wikipedia.org/wiki/Лермонтов,_Михаил_Юрьевич"
+    "wikiUrl": "https://ru.wikipedia.org/wiki/Лермонтов,_Михаил_Юрьевич",
+    "subcategory": "literature"
   },
   {
     "id": "per-15",
@@ -1064,7 +1078,8 @@
     "dateStart": "1809-04-01",
     "dateEnd": "1852-03-04",
     "category": "person",
-    "wikiUrl": "https://ru.wikipedia.org/wiki/Гоголь,_Николай_Васильевич"
+    "wikiUrl": "https://ru.wikipedia.org/wiki/Гоголь,_Николай_Васильевич",
+    "subcategory": "literature"
   },
   {
     "id": "per-16",
@@ -1072,7 +1087,8 @@
     "dateStart": "1828-09-09",
     "dateEnd": "1910-11-20",
     "category": "person",
-    "wikiUrl": "https://ru.wikipedia.org/wiki/Толстой,_Лев_Николаевич"
+    "wikiUrl": "https://ru.wikipedia.org/wiki/Толстой,_Лев_Николаевич",
+    "subcategory": "literature"
   },
   {
     "id": "per-17",
@@ -1080,7 +1096,8 @@
     "dateStart": "1821-11-11",
     "dateEnd": "1881-02-09",
     "category": "person",
-    "wikiUrl": "https://ru.wikipedia.org/wiki/Достоевский,_Фёдор_Михайлович"
+    "wikiUrl": "https://ru.wikipedia.org/wiki/Достоевский,_Фёдор_Михайлович",
+    "subcategory": "literature"
   },
   {
     "id": "per-18",
@@ -1088,7 +1105,8 @@
     "dateStart": "1860-01-29",
     "dateEnd": "1904-07-15",
     "category": "person",
-    "wikiUrl": "https://ru.wikipedia.org/wiki/Чехов,_Антон_Павлович"
+    "wikiUrl": "https://ru.wikipedia.org/wiki/Чехов,_Антон_Павлович",
+    "subcategory": "literature"
   },
   {
     "id": "per-19",
@@ -1096,7 +1114,8 @@
     "dateStart": "1840-05-07",
     "dateEnd": "1893-11-06",
     "category": "person",
-    "wikiUrl": "https://ru.wikipedia.org/wiki/Чайковский,_Пётр_Ильич"
+    "wikiUrl": "https://ru.wikipedia.org/wiki/Чайковский,_Пётр_Ильич",
+    "subcategory": "music"
   },
   {
     "id": "per-20",
@@ -1104,7 +1123,8 @@
     "dateStart": "1834-02-08",
     "dateEnd": "1907-02-02",
     "category": "person",
-    "wikiUrl": "https://ru.wikipedia.org/wiki/Менделеев,_Дмитрий_Иванович"
+    "wikiUrl": "https://ru.wikipedia.org/wiki/Менделеев,_Дмитрий_Иванович",
+    "subcategory": "science"
   },
   {
     "id": "per-21",
@@ -1112,7 +1132,8 @@
     "dateStart": "1849-09-26",
     "dateEnd": "1936-02-27",
     "category": "person",
-    "wikiUrl": "https://ru.wikipedia.org/wiki/Павлов,_Иван_Петрович"
+    "wikiUrl": "https://ru.wikipedia.org/wiki/Павлов,_Иван_Петрович",
+    "subcategory": "science"
   },
   {
     "id": "per-22",
@@ -1120,7 +1141,8 @@
     "dateStart": "1857-09-17",
     "dateEnd": "1935-09-19",
     "category": "person",
-    "wikiUrl": "https://ru.wikipedia.org/wiki/Циолковский,_Константин_Эдуардович"
+    "wikiUrl": "https://ru.wikipedia.org/wiki/Циолковский,_Константин_Эдуардович",
+    "subcategory": "technology"
   },
   {
     "id": "per-23",
@@ -1128,7 +1150,8 @@
     "dateStart": "1859-03-16",
     "dateEnd": "1906-01-13",
     "category": "person",
-    "wikiUrl": "https://ru.wikipedia.org/wiki/Попов,_Александр_Степанович"
+    "wikiUrl": "https://ru.wikipedia.org/wiki/Попов,_Александр_Степанович",
+    "subcategory": "technology"
   },
   {
     "id": "per-24",
@@ -1136,7 +1159,8 @@
     "dateStart": "1870-04-22",
     "dateEnd": "1924-01-21",
     "category": "person",
-    "wikiUrl": "https://ru.wikipedia.org/wiki/Ленин,_Владимир_Ильич"
+    "wikiUrl": "https://ru.wikipedia.org/wiki/Ленин,_Владимир_Ильич",
+    "subcategory": "politics"
   },
   {
     "id": "per-25",
@@ -1144,7 +1168,8 @@
     "dateStart": "1878-12-18",
     "dateEnd": "1953-03-05",
     "category": "person",
-    "wikiUrl": "https://ru.wikipedia.org/wiki/Сталин,_Иосиф_Виссарионович"
+    "wikiUrl": "https://ru.wikipedia.org/wiki/Сталин,_Иосиф_Виссарионович",
+    "subcategory": "politics"
   },
   {
     "id": "per-26",
@@ -1152,7 +1177,8 @@
     "dateStart": "1896-12-01",
     "dateEnd": "1974-06-18",
     "category": "person",
-    "wikiUrl": "https://ru.wikipedia.org/wiki/Жуков,_Георгий_Константинович"
+    "wikiUrl": "https://ru.wikipedia.org/wiki/Жуков,_Георгий_Константинович",
+    "subcategory": "military"
   },
   {
     "id": "per-27",
@@ -1160,7 +1186,8 @@
     "dateStart": "1907-01-12",
     "dateEnd": "1966-01-14",
     "category": "person",
-    "wikiUrl": "https://ru.wikipedia.org/wiki/Королёв,_Сергей_Павлович"
+    "wikiUrl": "https://ru.wikipedia.org/wiki/Королёв,_Сергей_Павлович",
+    "subcategory": "technology"
   },
   {
     "id": "per-28",
@@ -1168,7 +1195,8 @@
     "dateStart": "1934-03-09",
     "dateEnd": "1968-03-27",
     "category": "person",
-    "wikiUrl": "https://ru.wikipedia.org/wiki/Гагарин,_Юрий_Алексеевич"
+    "wikiUrl": "https://ru.wikipedia.org/wiki/Гагарин,_Юрий_Алексеевич",
+    "subcategory": "technology"
   },
   {
     "id": "per-29",
@@ -1176,7 +1204,8 @@
     "dateStart": "1921-05-21",
     "dateEnd": "1989-12-14",
     "category": "person",
-    "wikiUrl": "https://ru.wikipedia.org/wiki/Сахаров,_Андрей_Дмитриевич"
+    "wikiUrl": "https://ru.wikipedia.org/wiki/Сахаров,_Андрей_Дмитриевич",
+    "subcategory": "activism"
   },
   {
     "id": "per-30",
@@ -1184,7 +1213,8 @@
     "dateStart": "1931-03-02",
     "dateEnd": "2022-08-30",
     "category": "person",
-    "wikiUrl": "https://ru.wikipedia.org/wiki/Горбачёв,_Михаил_Сергеевич"
+    "wikiUrl": "https://ru.wikipedia.org/wiki/Горбачёв,_Михаил_Сергеевич",
+    "subcategory": "politics"
   },
   {
     "id": "per-31",
@@ -1192,7 +1222,8 @@
     "dateStart": "1931-02-01",
     "dateEnd": "2007-04-23",
     "category": "person",
-    "wikiUrl": "https://ru.wikipedia.org/wiki/Ельцин,_Борис_Николаевич"
+    "wikiUrl": "https://ru.wikipedia.org/wiki/Ельцин,_Борис_Николаевич",
+    "subcategory": "politics"
   },
   {
     "id": "per-32",
@@ -1200,7 +1231,8 @@
     "dateStart": "1818-04-29",
     "dateEnd": "1881-03-13",
     "category": "person",
-    "wikiUrl": "https://ru.wikipedia.org/wiki/Александр_II"
+    "wikiUrl": "https://ru.wikipedia.org/wiki/Александр_II",
+    "subcategory": "politics"
   },
   {
     "id": "per-33",
@@ -1208,7 +1240,8 @@
     "dateStart": "1868-05-18",
     "dateEnd": "1918-07-17",
     "category": "person",
-    "wikiUrl": "https://ru.wikipedia.org/wiki/Николай_II"
+    "wikiUrl": "https://ru.wikipedia.org/wiki/Николай_II",
+    "subcategory": "politics"
   },
   {
     "id": "per-34",
@@ -1216,7 +1249,8 @@
     "dateStart": "1879-02-23",
     "dateEnd": "1935-05-15",
     "category": "person",
-    "wikiUrl": "https://ru.wikipedia.org/wiki/Малевич,_Казимир_Северинович"
+    "wikiUrl": "https://ru.wikipedia.org/wiki/Малевич,_Казимир_Северинович",
+    "subcategory": "art"
   },
   {
     "id": "per-35",
@@ -1224,7 +1258,8 @@
     "dateStart": "1891-05-15",
     "dateEnd": "1940-03-10",
     "category": "person",
-    "wikiUrl": "https://ru.wikipedia.org/wiki/Булгаков,_Михаил_Афанасьевич"
+    "wikiUrl": "https://ru.wikipedia.org/wiki/Булгаков,_Михаил_Афанасьевич",
+    "subcategory": "literature"
   },
   {
     "id": "per-36",
@@ -1232,7 +1267,8 @@
     "dateStart": "1889-06-23",
     "dateEnd": "1966-03-05",
     "category": "person",
-    "wikiUrl": "https://ru.wikipedia.org/wiki/Ахматова,_Анна_Андреевна"
+    "wikiUrl": "https://ru.wikipedia.org/wiki/Ахматова,_Анна_Андреевна",
+    "subcategory": "literature"
   },
   {
     "id": "per-37",
@@ -1240,7 +1276,8 @@
     "dateStart": "1893-07-19",
     "dateEnd": "1930-04-14",
     "category": "person",
-    "wikiUrl": "https://ru.wikipedia.org/wiki/Маяковский,_Владимир_Владимирович"
+    "wikiUrl": "https://ru.wikipedia.org/wiki/Маяковский,_Владимир_Владимирович",
+    "subcategory": "literature"
   },
   {
     "id": "per-38",
@@ -1248,7 +1285,8 @@
     "dateStart": "1873-04-01",
     "dateEnd": "1943-03-28",
     "category": "person",
-    "wikiUrl": "https://ru.wikipedia.org/wiki/Рахманинов,_Сергей_Васильевич"
+    "wikiUrl": "https://ru.wikipedia.org/wiki/Рахманинов,_Сергей_Васильевич",
+    "subcategory": "music"
   },
   {
     "id": "per-39",
@@ -1256,7 +1294,8 @@
     "dateStart": "-0356-07-20",
     "dateEnd": "-0323-06-10",
     "category": "person",
-    "wikiUrl": "https://ru.wikipedia.org/wiki/Александр_Македонский"
+    "wikiUrl": "https://ru.wikipedia.org/wiki/Александр_Македонский",
+    "subcategory": "military"
   },
   {
     "id": "per-40",
@@ -1264,7 +1303,8 @@
     "dateStart": "-0100-07-13",
     "dateEnd": "-0044-03-15",
     "category": "person",
-    "wikiUrl": "https://ru.wikipedia.org/wiki/Юлий_Цезарь"
+    "wikiUrl": "https://ru.wikipedia.org/wiki/Юлий_Цезарь",
+    "subcategory": "military"
   },
   {
     "id": "per-41",
@@ -1272,7 +1312,8 @@
     "dateStart": "-0069-01-01",
     "dateEnd": "-0030-08-12",
     "category": "person",
-    "wikiUrl": "https://ru.wikipedia.org/wiki/Клеопатра_VII"
+    "wikiUrl": "https://ru.wikipedia.org/wiki/Клеопатра_VII",
+    "subcategory": "politics"
   },
   {
     "id": "per-42",
@@ -1280,7 +1321,8 @@
     "dateStart": "1162-05-31",
     "dateEnd": "1227-08-25",
     "category": "person",
-    "wikiUrl": "https://ru.wikipedia.org/wiki/Чингисхан"
+    "wikiUrl": "https://ru.wikipedia.org/wiki/Чингисхан",
+    "subcategory": "politics"
   },
   {
     "id": "per-43",
@@ -1288,7 +1330,8 @@
     "dateStart": "1412-01-06",
     "dateEnd": "1431-05-30",
     "category": "person",
-    "wikiUrl": "https://ru.wikipedia.org/wiki/Жанна_д'Арк"
+    "wikiUrl": "https://ru.wikipedia.org/wiki/Жанна_д'Арк",
+    "subcategory": "military"
   },
   {
     "id": "per-44",
@@ -1296,7 +1339,8 @@
     "dateStart": "1452-04-15",
     "dateEnd": "1519-05-02",
     "category": "person",
-    "wikiUrl": "https://ru.wikipedia.org/wiki/Леонардо_да_Винчи"
+    "wikiUrl": "https://ru.wikipedia.org/wiki/Леонардо_да_Винчи",
+    "subcategory": "art"
   },
   {
     "id": "per-45",
@@ -1304,7 +1348,8 @@
     "dateStart": "1473-02-19",
     "dateEnd": "1543-05-24",
     "category": "person",
-    "wikiUrl": "https://ru.wikipedia.org/wiki/Коперник,_Николай"
+    "wikiUrl": "https://ru.wikipedia.org/wiki/Коперник,_Николай",
+    "subcategory": "science"
   },
   {
     "id": "per-46",
@@ -1312,7 +1357,8 @@
     "dateStart": "1483-11-10",
     "dateEnd": "1546-02-18",
     "category": "person",
-    "wikiUrl": "https://ru.wikipedia.org/wiki/Лютер,_Мартин"
+    "wikiUrl": "https://ru.wikipedia.org/wiki/Лютер,_Мартин",
+    "subcategory": "philosophy"
   },
   {
     "id": "per-47",
@@ -1320,7 +1366,8 @@
     "dateStart": "1564-02-15",
     "dateEnd": "1642-01-08",
     "category": "person",
-    "wikiUrl": "https://ru.wikipedia.org/wiki/Галилей,_Галилео"
+    "wikiUrl": "https://ru.wikipedia.org/wiki/Галилей,_Галилео",
+    "subcategory": "science"
   },
   {
     "id": "per-48",
@@ -1328,7 +1375,8 @@
     "dateStart": "1564-04-26",
     "dateEnd": "1616-04-23",
     "category": "person",
-    "wikiUrl": "https://ru.wikipedia.org/wiki/Шекспир,_Уильям"
+    "wikiUrl": "https://ru.wikipedia.org/wiki/Шекспир,_Уильям",
+    "subcategory": "literature"
   },
   {
     "id": "per-49",
@@ -1336,7 +1384,8 @@
     "dateStart": "1643-01-04",
     "dateEnd": "1727-03-31",
     "category": "person",
-    "wikiUrl": "https://ru.wikipedia.org/wiki/Ньютон,_Исаак"
+    "wikiUrl": "https://ru.wikipedia.org/wiki/Ньютон,_Исаак",
+    "subcategory": "science"
   },
   {
     "id": "per-50",
@@ -1344,7 +1393,8 @@
     "dateStart": "1756-01-27",
     "dateEnd": "1791-12-05",
     "category": "person",
-    "wikiUrl": "https://ru.wikipedia.org/wiki/Моцарт,_Вольфганг_Амадей"
+    "wikiUrl": "https://ru.wikipedia.org/wiki/Моцарт,_Вольфганг_Амадей",
+    "subcategory": "music"
   },
   {
     "id": "per-51",
@@ -1352,7 +1402,8 @@
     "dateStart": "1770-12-17",
     "dateEnd": "1827-03-26",
     "category": "person",
-    "wikiUrl": "https://ru.wikipedia.org/wiki/Бетховен,_Людвиг_ван"
+    "wikiUrl": "https://ru.wikipedia.org/wiki/Бетховен,_Людвиг_ван",
+    "subcategory": "music"
   },
   {
     "id": "per-52",
@@ -1360,7 +1411,8 @@
     "dateStart": "1769-08-15",
     "dateEnd": "1821-05-05",
     "category": "person",
-    "wikiUrl": "https://ru.wikipedia.org/wiki/Наполеон_I"
+    "wikiUrl": "https://ru.wikipedia.org/wiki/Наполеон_I",
+    "subcategory": "politics"
   },
   {
     "id": "per-53",
@@ -1368,7 +1420,8 @@
     "dateStart": "1809-02-12",
     "dateEnd": "1882-04-19",
     "category": "person",
-    "wikiUrl": "https://ru.wikipedia.org/wiki/Дарвин,_Чарлз"
+    "wikiUrl": "https://ru.wikipedia.org/wiki/Дарвин,_Чарлз",
+    "subcategory": "science"
   },
   {
     "id": "per-54",
@@ -1376,7 +1429,8 @@
     "dateStart": "1818-05-05",
     "dateEnd": "1883-03-14",
     "category": "person",
-    "wikiUrl": "https://ru.wikipedia.org/wiki/Маркс,_Карл"
+    "wikiUrl": "https://ru.wikipedia.org/wiki/Маркс,_Карл",
+    "subcategory": "philosophy"
   },
   {
     "id": "per-55",
@@ -1384,7 +1438,8 @@
     "dateStart": "1867-11-07",
     "dateEnd": "1934-07-04",
     "category": "person",
-    "wikiUrl": "https://ru.wikipedia.org/wiki/Кюри,_Мария"
+    "wikiUrl": "https://ru.wikipedia.org/wiki/Кюри,_Мария",
+    "subcategory": "science"
   },
   {
     "id": "per-56",
@@ -1392,7 +1447,8 @@
     "dateStart": "1879-03-14",
     "dateEnd": "1955-04-18",
     "category": "person",
-    "wikiUrl": "https://ru.wikipedia.org/wiki/Эйнштейн,_Альберт"
+    "wikiUrl": "https://ru.wikipedia.org/wiki/Эйнштейн,_Альберт",
+    "subcategory": "science"
   },
   {
     "id": "per-57",
@@ -1400,7 +1456,8 @@
     "dateStart": "1869-10-02",
     "dateEnd": "1948-01-30",
     "category": "person",
-    "wikiUrl": "https://ru.wikipedia.org/wiki/Ганди,_Махатма"
+    "wikiUrl": "https://ru.wikipedia.org/wiki/Ганди,_Махатма",
+    "subcategory": "activism"
   },
   {
     "id": "per-58",
@@ -1408,7 +1465,8 @@
     "dateStart": "1874-11-30",
     "dateEnd": "1965-01-24",
     "category": "person",
-    "wikiUrl": "https://ru.wikipedia.org/wiki/Черчилль,_Уинстон"
+    "wikiUrl": "https://ru.wikipedia.org/wiki/Черчилль,_Уинстон",
+    "subcategory": "politics"
   },
   {
     "id": "per-59",
@@ -1416,7 +1474,8 @@
     "dateStart": "1856-07-10",
     "dateEnd": "1943-01-07",
     "category": "person",
-    "wikiUrl": "https://ru.wikipedia.org/wiki/Тесла,_Никола"
+    "wikiUrl": "https://ru.wikipedia.org/wiki/Тесла,_Никола",
+    "subcategory": "technology"
   },
   {
     "id": "per-60",
@@ -1424,7 +1483,8 @@
     "dateStart": "1918-07-18",
     "dateEnd": "2013-12-05",
     "category": "person",
-    "wikiUrl": "https://ru.wikipedia.org/wiki/Мандела,_Нельсон"
+    "wikiUrl": "https://ru.wikipedia.org/wiki/Мандела,_Нельсон",
+    "subcategory": "activism"
   },
   {
     "id": "per-61",

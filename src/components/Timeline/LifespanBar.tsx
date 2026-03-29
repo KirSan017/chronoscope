@@ -1,8 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import type { HistoryEvent } from "@/types";
-import { CATEGORY_COLORS } from "@/types";
+import type { HistoryEvent, PersonSubcategory } from "@/types";
+import { CATEGORY_COLORS, PERSON_SUBCATEGORY_COLORS } from "@/types";
 
 interface LifespanBarProps {
   person: HistoryEvent;
@@ -13,7 +13,9 @@ interface LifespanBarProps {
 }
 
 export function LifespanBar({ person, left, width, top, onClick }: LifespanBarProps) {
-  const color = CATEGORY_COLORS.person;
+  const color = person.subcategory
+    ? PERSON_SUBCATEGORY_COLORS[person.subcategory as PersonSubcategory] || CATEGORY_COLORS.person
+    : CATEGORY_COLORS.person;
   const startYear = person.dateStart.slice(0, 4).replace(/^-0*/, "");
   const endYear = person.dateEnd ? person.dateEnd.slice(0, 4).replace(/^-0*/, "") : "...";
 

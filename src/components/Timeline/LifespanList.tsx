@@ -1,7 +1,7 @@
 "use client";
 
 import { AnimatePresence } from "framer-motion";
-import type { Viewport, HistoryEvent, Category } from "@/types";
+import type { Viewport, HistoryEvent, Category, PersonSubcategory } from "@/types";
 import { yearToPixel, getVisibleRange } from "@/lib/viewport-math";
 import { LifespanBar } from "./LifespanBar";
 
@@ -10,6 +10,7 @@ interface LifespanListProps {
   viewport: Viewport;
   containerWidth: number;
   activeCategories: Set<Category>;
+  activePersonSubs: Set<PersonSubcategory>;
   axisY: number;
   onSelectPerson: (person: HistoryEvent) => void;
 }
@@ -22,7 +23,7 @@ function parseYear(dateStr: string): number {
 const BAR_HEIGHT = 28;
 const BAR_GAP = 6;
 
-export function LifespanList({ events, viewport, containerWidth, activeCategories, axisY, onSelectPerson }: LifespanListProps) {
+export function LifespanList({ events, viewport, containerWidth, activeCategories, activePersonSubs, axisY, onSelectPerson }: LifespanListProps) {
   if (!activeCategories.has("person")) return null;
 
   const { startYear, endYear } = getVisibleRange(viewport);
@@ -31,6 +32,7 @@ export function LifespanList({ events, viewport, containerWidth, activeCategorie
   const persons = events
     .filter((e) => {
       if (e.category !== "person") return false;
+      if (e.subcategory && !activePersonSubs.has(e.subcategory as PersonSubcategory)) return false;
       const birthYear = parseYear(e.dateStart);
       const deathYear = e.dateEnd ? parseYear(e.dateEnd) : birthYear + 70;
       return deathYear >= startYear - buffer && birthYear <= endYear + buffer;
