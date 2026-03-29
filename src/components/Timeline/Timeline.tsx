@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useRef, useState } from "react";
+import { forwardRef, useCallback, useEffect, useImperativeHandle, useRef, useState } from "react";
 import { AnimatePresence } from "framer-motion";
 import type { Category, HistoryEvent } from "@/types";
 import { useViewport } from "./useViewport";
@@ -16,11 +16,17 @@ interface TimelineProps {
   activeCategories: Set<Category>;
 }
 
-export function Timeline({ events, activeCategories }: TimelineProps) {
+export interface TimelineHandle {
+  goToYear: (year: number, span?: number) => void;
+}
+
+export const Timeline = forwardRef<TimelineHandle, TimelineProps>(function Timeline({ events, activeCategories }, ref) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [size, setSize] = useState({ width: 0, height: 0 });
   const [selectedEvent, setSelectedEvent] = useState<HistoryEvent | null>(null);
-  const { viewport, zoom, panStart, panMove, panEnd, goToEpoch } = useViewport();
+  const { viewport, zoom, panStart, panMove, panEnd, goToEpoch, goToYear } = useViewport();
+
+  useImperativeHandle(ref, () => ({ goToYear }));
 
   useEffect(() => {
     const el = containerRef.current;
@@ -78,4 +84,4 @@ export function Timeline({ events, activeCategories }: TimelineProps) {
       </AnimatePresence>
     </div>
   );
-}
+});
